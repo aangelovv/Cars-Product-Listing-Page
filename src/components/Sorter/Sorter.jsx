@@ -34,7 +34,7 @@ const Sorter = ({ data, onSortedData }) => {
   return (
     <div className={styles["sorter-container"]}>
       <div>
-        <label>Sort by:</label>
+        <label>Sort by price: </label>
         <select
           value={sortBy}
           onChange={handleSortChange}
@@ -45,7 +45,7 @@ const Sorter = ({ data, onSortedData }) => {
         </select>
       </div>
       <div>
-        <label>Sort order:</label>
+        <label>Sort order: </label>
         <select
           value={sortOrder}
           onChange={handleOrderChange}

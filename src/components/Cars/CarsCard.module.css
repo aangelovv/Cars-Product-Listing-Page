@@ -20,7 +20,7 @@
   height: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  border-bottom: 3px solid #7c5894;
+  border-bottom: 3px solid #3d3b3d;
 }
 
 .car-name {
@@ -38,12 +38,6 @@
   font-size: 18px;
   text-align: center;
 }
-
-/* .car-details {
-  display: flex;
-  justify-content: center;
-  margin: 0 0;
-} */
 
 .btn {
   padding: 10px 25px;
