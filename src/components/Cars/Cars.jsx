@@ -2,9 +2,10 @@ import React, { useEffect, useState } from "react";
 import * as vehiclesService from "../../services/vehiclesService";
 import styles from "./Cars.module.css";
 import CarsCard from "./CarsCard";
-import projectsCollection from "../../assets/group-of-projects.png";
+import carImage from "../../assets/black-car.png";
 import Sorter from "../Sorter/Sorter";
 import Filter from "../Filter/Filter";
+import Footer from "../Footer/Footer";
 
 const Cars = () => {
   const [cars, setCars] = useState([]);
@@ -108,7 +109,7 @@ const Cars = () => {
     <>
       <article className={styles.background}>
         <img
-          src="https://picjumbo.com/wp-content/uploads/minimalist-home-office-workspace-desk-setup-free-photo.jpg"
+          src="https://www.leaseplan.com/-/media/leaseplan-digital/int/fleet-management/images/header/cars_in_a_row.jpg?rev=5da0f6ce67fd48d78667fbee8c5e7fbf"
           alt="react-pic"
           className={styles.image}
         />
@@ -118,10 +119,13 @@ const Cars = () => {
           Choose the Best car for you!
         </h2>
         <div className={styles["car-collection-img"]}>
-          <img src={projectsCollection} alt="cars-collection" />
+          <img src={carImage} alt="cars-collection" />
         </div>
       </div>
       <section className={styles["cars-collection"]}>
+        <div className={styles["sorter"]}>
+          <Sorter data={cars} onSortedData={handleSortedData} />
+        </div>
         {/* Display the CarFilter component */}
         <Filter
           colors={colors}
@@ -132,18 +136,24 @@ const Cars = () => {
           onPriceChange={handlePriceChange}
         />
         {filterCars(cars).length > 0 ? (
-          filterCars(cars).map((x) => <CarsCard key={x.id} project={x} />)
+          filterCars(cars).map((x) => <CarsCard key={x.id} cars={x} />)
         ) : (
           <h3 className={styles["no-cars"]}>No Vehicles Available</h3>
         )}
+        <div className={styles["cars-counter"]}>Cars Shown: {carsCounter}</div>
+      </section>
+      <div className={styles["centered-div"]}>
         {hasMore && (
-          <button onClick={handleLoadMore} disabled={!hasMore}>
+          <button
+            className={styles["btn"]}
+            onClick={handleLoadMore}
+            disabled={!hasMore}
+          >
             Load More
           </button>
         )}
-        <div className={styles["cars-counter"]}>Cars Shown: {carsCounter}</div>
-        <Sorter data={cars} onSortedData={handleSortedData} />
-      </section>
+      </div>
+      <Footer />
     </>
   );
 };
