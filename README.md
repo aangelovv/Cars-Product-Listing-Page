@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Orlando Car Deals Single Page Application
+
+Before running the scripts, run npm install in the main folder /skillwork.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -14,57 +16,48 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+# Summary
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Implemented functionalities
 
-### `npm run build`
+The project is a single-page web application named "cars", built using React, a popular JavaScript library for building user interfaces, specifically single-page applications. The purpose of this application is to provide an intuitive user interface for browsing and shopping car products.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The project's UI is divided into different components for improved maintainability and reusability. The app consists of several main sections:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Header: This includes a logo and a navigational menu with different categories of car products. The header is designed to be 'sticky', i.e., it remains visible as the user scrolls down the page.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Product counter: This displays the number of products currently shown on the page out of the total available.
 
-### `npm run eject`
+3. Product Grid: This section showcases the products. Each product is represented by a tile, which contains an image of the product, its name, a short description, its price, a rating system, and an 'add to cart' button.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Filtering mechanism: This enables users to filter products based on certain characteristics. In our case, it's the color and the price of the products.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. Sorting mechanism: This feature provides users the ability to sort products alphabetically (from A-Z and Z-A) and also based on price (ascending and descending).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+6. Product name and description: This is a section that provides a brief description of the selected category and its name.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+7. Load More - This is a button that allows users to load more products into the product grid.
 
-## Learn More
+8. Footer - This section contains links to pages like T&C, Privacy Policy, and Contact Us.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Technologies used
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Under the hood, this application makes use of several popular libraries:
 
-### Code Splitting
+### Front-End
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- ReactJS: This project uses the latest version of React for building the user interface. React is chosen for its efficiency, flexibility, and powerful features such as hooks and context API.
 
-### Analyzing the Bundle Size
+- React Router: For handling page navigation within the application, the project uses React Router. It's a popular routing solution for React applications, allowing us to render specific components based on the current path in a dynamic single-page application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- React-Modal: This component is used to create modal dialogs, which are needed for specific features in the application.
 
-### Making a Progressive Web App
+- React-Icons: This library provides a wide array of icons from different icon packs. It's used to enhance the aesthetic appeal of the project and improve the user experience.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Back-End
 
-### Advanced Configuration
+- Parse (Back4App): This project uses Parse JavaScript SDK, hosted on Back4App, as the backend. Back4App provides a scalable and flexible backend for the application, featuring user authentication, database management, cloud functions, and much more. It allows us to focus on the frontend development, ensuring the backend processes run smoothly and securely.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## What were the challenges
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Implementing this project involved creating responsive, interactive components and managing state across these components. Challenges faced included handling data management tasks, ensuring the responsiveness of the app, and maintaining a clean, understandable codebase despite the complexity of the features implemented. This project demonstrates a strong understanding of React and modern front-end development practices.
