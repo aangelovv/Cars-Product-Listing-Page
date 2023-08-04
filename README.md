@@ -20,7 +20,7 @@ You may also see any lint errors in the console.
 
 ## Implemented functionalities
 
-The project is a single-page web application named "cars", built using React, a popular JavaScript library for building user interfaces, specifically single-page applications. The purpose of this application is to provide an intuitive user interface for browsing and shopping car products.
+The project is a single-page web application named "Orlando Car Deals", built using React, a popular JavaScript library for building user interfaces, specifically single-page applications. The purpose of this application is to provide an intuitive user interface for browsing and shopping vehicles.
 
 The project's UI is divided into different components for improved maintainability and reusability. The app consists of several main sections:
 
@@ -28,7 +28,7 @@ The project's UI is divided into different components for improved maintainabili
 
 2. Product counter: This displays the number of products currently shown on the page out of the total available.
 
-3. Product Grid: This section showcases the products. Each product is represented by a tile, which contains an image of the product, its name, a short description, its price, a rating system, and an 'add to cart' button.
+3. Product Grid: This section showcases the products. Each product is represented by a tile, which contains an image of the product, its name, a short description, its price, a rating system, and an 'Add to cart' button.
 
 4. Filtering mechanism: This enables users to filter products based on certain characteristics. In our case, it's the color and the price of the products.
 
@@ -36,9 +36,9 @@ The project's UI is divided into different components for improved maintainabili
 
 6. Product name and description: This is a section that provides a brief description of the selected category and its name.
 
-7. Load More - This is a button that allows users to load more products into the product grid.
+7. Load More: This is a button that allows users to load more products into the product grid.
 
-8. Footer - This section contains links to pages like T&C, Privacy Policy, and Contact Us.
+8. Footer: This section contains links to pages like T&C, Privacy Policy, and Contact Us.
 
 ## Technologies used
 
@@ -50,13 +50,13 @@ Under the hood, this application makes use of several popular libraries:
 
 - React Router: For handling page navigation within the application, the project uses React Router. It's a popular routing solution for React applications, allowing us to render specific components based on the current path in a dynamic single-page application.
 
-- React-Modal: This component is used to create modal dialogs, which are needed for specific features in the application.
-
 - React-Icons: This library provides a wide array of icons from different icon packs. It's used to enhance the aesthetic appeal of the project and improve the user experience.
+
+- CSS Modules: This project uses CSS Modules to style React components. CSS Modules let us write CSS that is scoped locally to individual components, thus eliminating the risk of name collisions and unexpected overrides. This means that the styles applied to a component are local to that component, and won't affect or be affected by styles in other components. It greatly increases the maintainability of the CSS and ensures a consistent look and feel across the application.
 
 ### Back-End
 
-- Parse (Back4App): This project uses Parse JavaScript SDK, hosted on Back4App, as the backend. Back4App provides a scalable and flexible backend for the application, featuring user authentication, database management, cloud functions, and much more. It allows us to focus on the frontend development, ensuring the backend processes run smoothly and securely.
+- Parse (Back4App): This project uses Parse JavaScript SDK, hosted on Back4App, as the backend. Back4App provides a scalable and flexible backend for the application featuring user database management. It allows us to focus on the frontend development, ensuring the backend processes run smoothly and securely.
 
 ## What were the challenges
 
