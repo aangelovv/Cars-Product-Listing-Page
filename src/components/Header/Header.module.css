@@ -69,3 +69,36 @@ span {
   flex-direction: row;
 }
 
+@media screen and (max-width: 991px) {
+  .links-wrapper {
+    display: none;
+  }
+
+  .links-wrapper-open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* 70% opacity black background */
+    padding: 10px;
+    justify-content: flex-start;
+    align-items: flex-end; /* Aligns items to the right */
+    border-bottom-left-radius: 10px;
+  }
+
+  .hamburger {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 3em; /* Adjust to desired size */
+    margin-right: 15px; /* Add space on the right */
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .hamburger {
+    display: none;
+  }
+}

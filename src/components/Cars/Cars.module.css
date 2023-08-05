@@ -43,6 +43,53 @@
   height: 100%;
 }
 
+/* ========= Media queries start ========= */
+
+/* For laptops */
+@media screen and (max-width: 1366px) {
+  .cars-collection-heading {
+    font-size: 3rem;
+  }
+
+  .car-collection-img img {
+    width: 150px;
+  }
+}
+
+/* For tablet devices */
+@media screen and (max-width: 991px) {
+  .cars-collection-heading {
+    font-size: 2.5rem;
+  }
+
+  .car-collection-img img {
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cars-collection-heading {
+    font-size: 2rem;
+  }
+
+  .car-collection-img img {
+    width: 100px;
+  }
+}
+
+/* For mobile devices */
+@media screen and (max-width: 576px) {
+  .cars-collection-heading {
+    font-size: 1.5rem;
+  }
+
+  .car-collection-img {
+    display: none;
+  }
+}
+
+/* ========= Media queries end ========= */
+
 .cars-per-page {
   background-color: blanchedalmond;
 }
