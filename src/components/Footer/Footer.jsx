@@ -18,19 +18,15 @@ function Footer() {
       </div>
       <div className={styles.contact}>
         <p>
-          {" "}
           <FaMapMarkerAlt /> 608 E Landstreet Rd B, Orlando, FL 32824
         </p>
         <p>
-          {" "}
           <FaPhone /> +1 407-504-7876
         </p>
         <p>
-          {" "}
           <FaMapMarkerAlt /> 3450 W Colonial Dr, Orlando, FL 32808
         </p>
         <p>
-          {" "}
           <FaPhone /> +1 407-578-9377
         </p>
       </div>

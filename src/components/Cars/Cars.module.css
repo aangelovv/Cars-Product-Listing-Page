@@ -43,57 +43,6 @@
   height: 100%;
 }
 
-/* ========= Media queries start ========= */
-
-/* For laptops */
-@media screen and (max-width: 1366px) {
-  .cars-collection-heading {
-    font-size: 3rem;
-  }
-
-  .car-collection-img img {
-    width: 150px;
-  }
-}
-
-/* For tablet devices */
-@media screen and (max-width: 991px) {
-  .cars-collection-heading {
-    font-size: 2.5rem;
-  }
-
-  .car-collection-img img {
-    width: 120px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .cars-collection-heading {
-    font-size: 2rem;
-  }
-
-  .car-collection-img img {
-    width: 100px;
-  }
-}
-
-/* For mobile devices */
-@media screen and (max-width: 576px) {
-  .cars-collection-heading {
-    font-size: 1.5rem;
-  }
-
-  .car-collection-img {
-    display: none;
-  }
-}
-
-/* ========= Media queries end ========= */
-
-.cars-per-page {
-  background-color: blanchedalmond;
-}
-
 .cars-counter {
   width: 175px;
   background-color: #007bff;
@@ -109,6 +58,82 @@
   top: -30px;
   right: 10px;
   padding: 15px;
+}
+
+/* ========= Media queries start ========= */
+
+/* For laptops */
+@media screen and (max-width: 1366px) {
+  .cars-collection-heading {
+    font-size: 3rem;
+  }
+
+  .car-collection-img img {
+    width: 150px;
+  }
+
+  .cars-counter {
+    font-size: 18px;
+    width: 130px;
+    top: -25px;
+    padding: 10px;
+  }
+}
+
+/* For tablet devices */
+@media screen and (max-width: 991px) {
+  .cars-collection-heading {
+    font-size: 2.5rem;
+  }
+
+  .car-collection-img img {
+    width: 120px;
+  }
+
+  .cars-counter {
+    font-size: 16px;
+    width: 120px;
+    top: -20px;
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cars-collection-heading {
+    font-size: 2rem;
+  }
+
+  .car-collection-img img {
+    width: 100px;
+  }
+
+  .cars-counter {
+    font-size: 14px;
+    width: 100px;
+    top: -20px;
+    padding: 6px;
+  }
+}
+
+/* For mobile devices */
+@media screen and (max-width: 576px) {
+  .cars-collection-heading {
+    font-size: 1.5rem;
+  }
+
+  .car-collection-img {
+    display: none;
+  }
+
+  .cars-counter {
+    display: none;
+  }
+}
+
+/* ========= Media queries end ========= */
+
+.cars-per-page {
+  background-color: blanchedalmond;
 }
 
 .btn {

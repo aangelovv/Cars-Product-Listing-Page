@@ -23,6 +23,20 @@
   border-bottom: 3px solid #3d3b3d;
 }
 
+@media screen and (max-width: 576px) {
+  .cars {
+    width: 75vw;
+  }
+
+  .car-img-wrapper {
+    width: 75vw;
+  }
+
+  .car-img-wrapper img {
+    width: 100%;
+  }
+}
+
 .car-name {
   color: rgb(70, 66, 66);
   font-weight: bold;

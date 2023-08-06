@@ -45,6 +45,23 @@
   margin-bottom: -15px;
 }
 
+.cars-counter {
+  width: 175px;
+  background-color: #007bff;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 10px;
+  margin: 10px;
+  position: absolute;
+  top: -30px;
+  right: 10px;
+  padding: 15px;
+}
+
 /* ========= Media queries start ========= */
 
 /* For laptops and desktops */
@@ -66,6 +83,13 @@
   .car-collection-img img {
     width: 100px;
   }
+
+  .cars-counter {
+    font-size: 18px;
+    width: 130px;
+    top: -25px;
+    padding: 10px;
+  }
 }
 
 /* For tablet devices */
@@ -77,11 +101,25 @@
   .car-collection-img img {
     display: none;
   }
+
+  .cars-counter {
+    font-size: 16px;
+    width: 120px;
+    top: -20px;
+    padding: 8px;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .cars-collection-heading {
     font-size: 1.5rem;
+  }
+
+  .cars-counter {
+    font-size: 14px;
+    width: 100px;
+    top: -20px;
+    padding: 6px;
   }
 }
 
@@ -90,29 +128,16 @@
   .cars-collection-heading {
     font-size: 1.2rem;
   }
+
+  .cars-counter {
+    display: none;
+  }
 }
 
 /* ========= Media queries end ========= */
 
 .cars-per-page {
   background-color: blanchedalmond;
-}
-
-.cars-counter {
-  width: 175px;
-  background-color: #007bff;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  font-weight: bold;
-  border-radius: 10px;
-  margin: 10px;
-  position: absolute;
-  top: -30px;
-  right: 10px;
-  padding: 15px;
 }
 
 .btn {
