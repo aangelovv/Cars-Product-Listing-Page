@@ -1,6 +1,10 @@
 # Orlando Car Deals Single Page Application
 
-Before running the scripts, run npm install in the main folder /skillwork.
+![Desktop GIF](car-deals-desktop.gif)
+
+![Mobile GIF](car-deals-mobile.gif)
+
+Before running the scripts, run npm install in the main folder /cars-product-listing-page.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -10,11 +14,9 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The page will reload when you make changes. You may also see any lint errors in the console.
 
 # Summary
 
@@ -28,7 +30,7 @@ The project's UI is divided into different components for improved maintainabili
 
 2. Product counter: This displays the number of products currently shown on the page out of the total available.
 
-3. Product Grid: This section showcases the products. Each product is represented by a tile, which contains an image of the product, its name, a short description, its price, a rating system, and an 'Add to cart' button.
+3. Product Grid: This section showcases the products. Each product is represented by a tile, which contains an image of the product, its name, a short description, its price, and an 'Add to cart' button.
 
 4. Filtering mechanism: This enables users to filter products based on certain characteristics. In our case, it's the color and the price of the products.
 
