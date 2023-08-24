@@ -2,6 +2,7 @@ import { render, screen } from "@testing-library/react";
 import App from "./App";
 import Cars from "../src/components/Cars/Cars";
 import Vans from "../src/components/Vans/Vans";
+import Motorcycles from "../src/components/Motorcycles/Motorcycles";
 
 test("renders learn react link", () => {
   render(<App />);
@@ -15,8 +16,14 @@ test("renders cars link", () => {
   expect(linkElement).toBeInTheDocument();
 });
 
-test("renders user profile link", () => {
+test("renders Vans link", () => {
   render(<Vans />);
   const linkElement = screen.getByText(/vans/i);
+  expect(linkElement).toBeInTheDocument();
+});
+
+test("renders Motorcycles link", () => {
+  render(<Motorcycles />);
+  const linkElement = screen.getByText(/motorcycles/i);
   expect(linkElement).toBeInTheDocument();
 });
