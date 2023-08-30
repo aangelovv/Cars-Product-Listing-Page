@@ -3,6 +3,7 @@ import App from "./App";
 import Cars from "../src/components/Cars/Cars";
 import Vans from "../src/components/Vans/Vans";
 import Motorcycles from "../src/components/Motorcycles/Motorcycles";
+import OtherVehicles from "../src/components/OtherVehicles/OtherVehicles";
 
 test("renders learn react link", () => {
   render(<App />);
@@ -25,5 +26,11 @@ test("renders Vans link", () => {
 test("renders Motorcycles link", () => {
   render(<Motorcycles />);
   const linkElement = screen.getByText(/motorcycles/i);
+  expect(linkElement).toBeInTheDocument();
+});
+
+test("renders Other vehicles link", () => {
+  render(<OtherVehicles />);
+  const linkElement = screen.getByText(/Other Vehicles/i);
   expect(linkElement).toBeInTheDocument();
 });
