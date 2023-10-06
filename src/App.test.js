@@ -29,8 +29,8 @@ test("renders Motorcycles link", () => {
   expect(linkElement).toBeInTheDocument();
 });
 
-test("renders Other Vehicles link", () => {
+test("renders Other vehicles link", () => {
   render(<OtherVehicles />);
-  const linkElement = screen.getByText(/Other Vehicles/i);
+  const linkElement = screen.getByText(/Other vehicles/i);
   expect(linkElement).toBeInTheDocument();
 });
